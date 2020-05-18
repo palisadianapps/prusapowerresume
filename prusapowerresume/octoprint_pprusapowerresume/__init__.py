@@ -14,7 +14,6 @@ import re
 import octoprint.plugin
 
 
-
 class PprusapowerresumePlugin(octoprint.plugin.SettingsPlugin,
 							  octoprint.plugin.AssetPlugin,
 							  octoprint.plugin.TemplatePlugin,
@@ -224,8 +223,8 @@ class PprusapowerresumePlugin(octoprint.plugin.SettingsPlugin,
 
 		actualrange = reallineback - lll
 		print(actualrange)
-
-		percentage = 50
+		k = open("gpowerresume.txt", "r")
+		percentage = k.read()
 
 		upuntilline = actualrange * (percentage * 0.01)
 		print(upuntilline)
