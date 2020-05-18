@@ -1,1 +1,0 @@
-{"bedtemp": 90, "endtemp": 180}
