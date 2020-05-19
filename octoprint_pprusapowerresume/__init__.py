@@ -246,8 +246,13 @@ class PprusapowerresumePlugin(octoprint.plugin.StartupPlugin,
 
 		self.createresumefile(targetfile, lll, upuntilline, str(bedtemp), str(endtemp))
 
-	def on_after_startup(self):
-		self._logger.info("OctoPrint-DetailedProgress loaded!")
+	def on_startup(self, host, port):
+		self._logger.log("OctoPrint-PrusaPower Working!")
+
+
+		self._host = host
+		self._port = port
+		#self._main = Main(self)
 
 		fname = "gpowerresume.txt"
 		count = 0
