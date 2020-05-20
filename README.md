@@ -15,3 +15,7 @@ the plugin manager.
 ## Configuration
 
 **TODO:** Describe your plugin's configuration options (if any).
+
+compatibility:
+  python: ">=3,<4"
+  python: >=3,<4
